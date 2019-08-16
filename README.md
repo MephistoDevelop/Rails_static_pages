@@ -1,11 +1,4 @@
-# Mostly static pages
 
-### Ruby on Rails static pages Repository
-
-**Description**
-
-Chapter 3 Mostly static pages excercise from Ruby on Rails Tutorial (Rails 5) Learn Web Development with Rails
-                                             Michael Hartl
 # Ruby on Rails Tutorial sample application
 
 This is the sample application for
