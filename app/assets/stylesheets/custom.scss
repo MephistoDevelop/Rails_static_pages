@@ -1,0 +1,56 @@
+  @import "bootstrap-sprockets";
+  @import "bootstrap";
+
+
+  /* universal */
+
+  body {
+    padding-top: 60px;
+  }
+
+  section {
+    overflow: auto;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .center h1 {
+    margin-bottom: 10px;
+  }
+  /* footer */
+
+  footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color: #777;
+
+    small {
+      float: left;
+    }
+
+    a {
+      color: #555;
+      &:hover {
+        color: #222;
+      }
+    }
+
+    ul {
+      float: right;
+      list-style: none;
+
+      li {
+        float: left;
+        margin-left: 15px;
+      }
+    }
+
+  }
+
