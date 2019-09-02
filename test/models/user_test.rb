@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
@@ -5,32 +7,31 @@ class UserTest < ActiveSupport::TestCase
   #   assert true
   # endde
   def setup
-    @user = User.new(name: "Example User", email: "user@example.com",
-                     password: "foobar", password_confirmation: "foobar")
-
+    @user = User.new(name: 'Example User', email: 'user@example.com',
+                     password: 'foobar', password_confirmation: 'foobar')
   end
 
-  test'should be valid' do
+  test 'should be valid' do
     assert @user.valid?
   end
 
   test 'name should be present ' do
-    @user.name = "     "
+    @user.name = '     '
     assert_not @user.valid?
   end
 
   test 'email should be present' do
-    @user.email="     "
+    @user.email = '     '
     assert_not @user.valid?
   end
 
   test 'name should not be too long' do
-    @user.name="a"*51
+    @user.name = 'a' * 51
     assert_not @user.valid?
   end
 
   test 'email should not be too long' do
-    @user.email = "a"*244 + "@example.com"
+    @user.email = 'a' * 244 + '@example.com'
     assert_not @user.valid?
   end
 
@@ -51,20 +52,19 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test 'email address should b saved as a lower case' do
-
-    mixed_case_email = "Foo@ExAMPle.CoM"
+    mixed_case_email = 'Foo@ExAMPle.CoM'
     @user.email = mixed_case_email
     @user.save
     assert_equal mixed_case_email.downcase, @user.reload.email
   end
 
   test 'Password Should be Present (non blank)' do
-    @user.password = @user.password_confirmation = " "*6
+    @user.password = @user.password_confirmation = ' ' * 6
     assert_not @user.valid?
   end
 
   test 'password should have a minumum length' do
-    @user.password = @user.password_confirmation = "a"*5
+    @user.password = @user.password_confirmation = 'a' * 5
     assert_not @user.valid?
   end
 end
