@@ -2475,3 +2475,578 @@ Migrating to AddPasswordDigestToUsers (20190902214508)
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2019-09-03 12:31:24 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (196.7ms)
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/config
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/images
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/node_modules
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/images):
+     8:   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"),
+    12:             'http://rubyonrails.org/' %>
+  
+app/assets/javascripts/application.js:13
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb___615692490509948386_47367544615740'
+Started GET "/" for 127.0.0.1 at 2019-09-03 12:31:27 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/config
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/images
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/node_modules
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/images):
+     8:   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"),
+    12:             'http://rubyonrails.org/' %>
+  
+app/assets/javascripts/application.js:13
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb___615692490509948386_69997296661040'
+Started GET "/" for 127.0.0.1 at 2019-09-03 12:36:52 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/config
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/images
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/node_modules
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/images):
+     8:   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"),
+    12:             'http://rubyonrails.org/' %>
+  
+app/assets/javascripts/application.js:13
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb___615692490509948386_69997420213900'
+Started GET "/users/new" for 127.0.0.1 at 2019-09-03 12:40:06 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-09-03 12:40:08 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-09-03 12:40:10 -0500
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 179ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-09-03 12:40:11 -0500
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2019-09-03 12:40:12 -0500
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-09-03 12:40:13 -0500
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 116ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-03 12:40:14 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/config
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/images
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/node_modules
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/images):
+     8:   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"),
+    12:             'http://rubyonrails.org/' %>
+  
+app/assets/javascripts/application.js:13
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb___615692490509948386_69997296828340'
+Started GET "/help" for 127.0.0.1 at 2019-09-03 12:40:19 -0500
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-09-03 12:40:20 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2019-09-03 12:40:20 -0500
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-09-03 12:40:20 -0500
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-09-03 12:40:21 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-09-03 12:40:22 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-09-03 12:40:22 -0500
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-03 12:40:23 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/config
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/images
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/node_modules
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/images):
+     8:   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"),
+    12:             'http://rubyonrails.org/' %>
+  
+app/assets/javascripts/application.js:13
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb___615692490509948386_47367546013720'
+Started GET "/" for 127.0.0.1 at 2019-09-03 13:01:11 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/config
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/images
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/node_modules
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/images):
+     8:   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"),
+    12:             'http://rubyonrails.org/' %>
+  
+app/assets/javascripts/application.js:13
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb___615692490509948386_47367547062160'
+Started GET "/" for 127.0.0.1 at 2019-09-03 13:08:36 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (232.2ms)
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/config
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/images
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/node_modules
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/images):
+     8:   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"),
+    12:             'http://rubyonrails.org/' %>
+  
+app/assets/javascripts/application.js:13
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb__3668146125209777090_47234422831060'
+Started GET "/" for 127.0.0.1 at 2019-09-03 13:17:40 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (215.8ms)
+Completed 500 Internal Server Error in 224ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/config
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/images
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/node_modules
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/images):
+     8:   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"),
+    12:             'http://rubyonrails.org/' %>
+  
+app/assets/javascripts/application.js:13
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb__3262797933141051110_47369401005940'
+Started GET "/" for 127.0.0.1 at 2019-09-03 13:18:31 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/config
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/images
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/node_modules
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/images):
+     8:   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"),
+    12:             'http://rubyonrails.org/' %>
+  
+app/assets/javascripts/application.js:13
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb__3262797933141051110_70191207750360'
+Started GET "/" for 127.0.0.1 at 2019-09-03 13:21:13 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (140.4ms)
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/config
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/images
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/app/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mephistodevelop/Develop/Microverse/rails/Rails_static_pages/node_modules
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.3.7/assets/images):
+     8:   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"),
+    12:             'http://rubyonrails.org/' %>
+  
+app/assets/javascripts/application.js:13
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb__1469872987907827143_70342944649720'
+Started GET "/" for 127.0.0.1 at 2019-09-03 13:21:25 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (392.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 399ms (Views: 397.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-03 13:21:28 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-03 13:21:29 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-09-03 13:21:31 -0500
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2019-09-03 13:21:32 -0500
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-09-03 13:21:32 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-09-03 13:21:33 -0500
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-09-03 13:21:34 -0500
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-03 13:21:35 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-03 13:21:46 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-03 13:21:49 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-09-03 13:21:50 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for ::1 at 2019-09-03 13:21:51 -0500
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-03 13:22:38 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
