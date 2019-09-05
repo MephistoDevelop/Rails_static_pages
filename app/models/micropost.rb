@@ -1,4 +1,5 @@
 class Micropost < ApplicationRecord
-  validates :contest, length: {maximum: 140}
+  validates :contest, length: {maximum: 140},
+            presence: true
   belongs_to :user
 end

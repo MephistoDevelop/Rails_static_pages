@@ -1,1 +1,11 @@
-Soy <%  @users %>
+<% provide(:title, @users.name)%>
+<div>
+  <aside>
+    <section>
+      <h1>
+        <%=gravatar_for @users %>
+        <%= @users.name %>
+      </h1>
+    </section>
+  </aside>
+</div>
