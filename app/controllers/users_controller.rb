@@ -2,7 +2,7 @@
 
 class UsersController < ApplicationController
   def new
-    @users = User.new
+    @user = User.new
   end
 
   def show
@@ -15,13 +15,18 @@ class UsersController < ApplicationController
   end
 
   def create
-    @users = User.new(params[:id])
-    if @users.save
-      flash[:succes] = "Welcome To The Sample APP"
-      redirect_to @users
-      # handle a suscessfull action
+    @user = User.new(user_params)
+    if @user.save
+      flash[:success] = "Welcome to the Sample App!"
+      redirect_to @user
     else
       render 'new'
     end
   end
+
+  private
+    def user_params
+      params.require(:user).permit(:name, :email, :password,
+                                   :password_confirmation)
+    end
 end
