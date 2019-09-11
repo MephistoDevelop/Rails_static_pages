@@ -11,6 +11,14 @@ class UsersController < ApplicationController
   def index
     @users = User.all
   end
+  def create
+    @users = User.new(params[:id])
+    if @users.save
+      #handle a suscessfull action
+    else
+      render 'new'
+    end
+  end
 end
 
 
