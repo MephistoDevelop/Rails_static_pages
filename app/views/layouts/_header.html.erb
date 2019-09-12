@@ -1,13 +1,13 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container row cnav">
-    <%= link_to "sample app", root_path, id: "logo" %>
+<header class="navbar">
+  <div class="container cnav">
+    <%= link_to "SAMPLE APP", root_path, id: "logo" %>
     <nav>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-right">
         <li><%= link_to "Home",   root_path %></li>
+          <li><%= link_to "Log in", login_path %></li>
         <li><%= link_to "About",   about_path %></li>
         <li><%= link_to "Help",   help_path %></li>
         <li><%= link_to "Contact",   contact_path %></li>
-        <li><%= link_to "Log in", signup_path %></li>
         <li><%= link_to "Usuarios", users_path %></li>
       </ul>
     </nav>

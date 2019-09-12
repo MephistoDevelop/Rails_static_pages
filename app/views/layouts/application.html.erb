@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Archivos Bootstrap  -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/bootstrap.min.js" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css" rel="stylesheet">
+
+    <!-- Con estas 2 líneas llamamos a los archivos CSS y Javascript de Bootstrap y demás -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
 <%= render 'layouts/header' %>
 <div class="container">
  <% flash.each do |message_type, message| %>
