@@ -1,15 +1,51 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  padding: 0px;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.container {
+  padding: 0px;
+  margin: 10px auto;
+}
+.debug_dump {
+  background-color: beige;
+  padding: 20px;
+}
+
+.form-login {
+  justify-content: center;
+}
+#log-text {
+  text-align: center;
+}
+ul .nav {
+  list-style-type: none;
+  display: ruby-base-container;
+}
+ul li {
+  padding: 10px;
+  a {
+    color: gainsboro;
+  }
+}
+
+.cform {
+  padding: 0px 15vw;
+}
+.cnav {
+  background-color: gray;
+}
+.row {
+  padding: 0px;
+  margin: 0px;
+}
+#logo {
+  font-size: 45px;
+  color: whitesmoke;
+  font-weight: 900;
+  padding-left: 20px;
+}
