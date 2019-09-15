@@ -16,10 +16,7 @@ class User < ApplicationRecord
     SecureRandom.urlsafe_base64
   end
 
-  def remember
-    self.remember_token = User.new_token
-    update_attribute(:remember_digest, User.digest(remember_token))
-  end
+
   class << self
 
     # Returns the hash digest of the given string.
@@ -36,6 +33,11 @@ class User < ApplicationRecord
     # Returns a random token.
     def self.new_token
       SecureRandom.urlsafe_base64
+    end
+
+    def remember
+      self.remember_token = User.new_token
+      update_attribute(:remember_digest, User.digest(remember_token))
     end
   end
 
