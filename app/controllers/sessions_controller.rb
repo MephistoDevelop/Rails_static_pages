@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-include ::SessionsHelper
-
 class SessionsController < ApplicationController
+  include ::SessionsHelper
+
   def new
     render 'new'
   end

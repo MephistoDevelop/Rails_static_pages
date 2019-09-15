@@ -35,7 +35,7 @@ class MicropostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should update micropost' do
-    # patch micropost_url(@micropost), params: { micropost: { contest: @micropost.contest, user_id: @micropost.user_id } }
+    # patch micropost_url(@micropost), params: { micropost:{contest: @micropost.contest,user_id: @micropost.user_id } }
     # assert_redirected_to micropost_url(@micropost)
   end
 
