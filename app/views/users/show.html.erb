@@ -1,12 +1,12 @@
-<% provide(:title, @users.name)%>
+<% provide(:title, @user.name)%>
 <div>
   <aside>
     <section>
       <h1>
-        <%=gravatar_for @users %>
-        <%= @users.name %>
+        <%=gravatar_for @user %>
+        <%= @user.name %>
       </h1>
-      <%= @users.name %>, <%= @users.email %>
+      <%= @user.name %>, <%= @user.email %>
     </section>
   </aside>
 </div>
