@@ -19,40 +19,37 @@ class User < ApplicationRecord
   end
 
   # Sends activation email.
+  private
+ # Converts email to all lower-case.
+  def downcase_email
+    self.email = email.downcase
+  end
 
+
+
+  # Creates and assigns the activation token and digest.
+  def create_activation_digest
+    self.activation_token  = User.new_token
+    self.activation_digest = User.digest(activation_token)
+  end
+
+  def User.digest(string)
+    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+               BCrypt::Engine.cost
+    BCrypt::Password.create(string, cost: cost)
+  end
+
+  # Returns a random token.
+  def self.new_token
+    SecureRandom.urlsafe_base64
+  end
 
   class << self
 
     def send_activation_email
       UserMailer.account_activation(self).deliver_now
     end
-    # Returns a random token.
-    def self.new_token
-      SecureRandom.urlsafe_base64
-    end
 
-    # Returns the hash digest of the given string.
-    def self.digest(string)
-      if ActiveModel::SecurePassword.min_cost
-        BCrypt::Engine::MIN_COST
-      else
-        BCrypt::Engine::MIN_COST :BCrypt::Engine.cost
-      end
-
-      BCrypt::Password.create(string, cost: costra)
-    end
-
-    private
-    # Converts email to all lower-case.
-    def downcase_email
-      self.email = email.downcase
-    end
-
-    # Creates and assigns the activation token and digest.
-    def create_activation_digest
-      self.activation_token  = User.new_token
-      self.activation_digest = User.digest(activation_token)
-    end
 
     # Sets the password reset attributes.
     def create_reset_digest
