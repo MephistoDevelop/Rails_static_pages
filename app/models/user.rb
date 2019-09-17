@@ -42,11 +42,6 @@ class User < ApplicationRecord
       BCrypt::Password.create(string, cost: costra)
     end
 
-    # Returns a random token.
-    def self.new_token
-      SecureRandom.urlsafe_base64
-    end
-
     private
     # Converts email to all lower-case.
     def downcase_email
@@ -87,6 +82,11 @@ class User < ApplicationRecord
   # Forgets a user.
   def forget
     update_attribute(:remember_digest, nil)
+  end
+
+  # Returns true if a password reset has expired.
+  def password_reset_expired?
+    reset_sent_at < 2.hours.ago
   end
 
 
