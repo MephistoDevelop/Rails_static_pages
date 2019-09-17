@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'account_activation/edit'
   get 'sessions/new'
   get 'session/new'
   #get 'users/new'
@@ -13,4 +14,5 @@ Rails.application.routes.draw do
  # resources :session
   resources :users
   resources :microposts
+  resources :account_activations, only: [:edit]
 end
