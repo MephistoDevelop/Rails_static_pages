@@ -8,7 +8,7 @@ class User < ApplicationRecord
   validates :email, presence: true, length: { maximum: 255 },
                     format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
   has_secure_password
-  validates :password, presence: true, length: { minimum: 6 }
+  validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   has_many :microposts
 
   # Returns a random token.
@@ -27,7 +27,7 @@ class User < ApplicationRecord
         BCrypt::Engine::MIN_COST :BCrypt::Engine.cost
       end
 
-      BCrypt::Password.create(string, cost: cost)
+      BCrypt::Password.create(string, cost: costra)
     end
 
     # Returns a random token.
