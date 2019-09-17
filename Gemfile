@@ -17,6 +17,7 @@ gem 'bcrypt', '3.1.12'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'faker', '1.7.3'
 gem 'will_paginate', '3.1.6'
+gem 'pg'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
