@@ -18424,3 +18424,60 @@ app/controllers/users_controller.rb:31:in `create'
   ↳ db/seeds.rb:1
   [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
   ↳ db/seeds.rb:1
+Started POST "/users" for 127.0.0.1 at 2019-09-17 07:41:10 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mephistodevelop/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CnDTHGBAIlKL+gkIuFWGwUG/Ai1AmQtpXoRUq9Cz2qp6qIOQvJW8I/UWXFR7VC8woTiZOrqSlq2GqH4VUN0c9A==", "user"=>{"name"=>"cristian hernandez", "email"=>"inesherald@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "inesherald@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `downcase_email' for #<User:0x00007f1f909b54e0>):
+  
+app/controllers/users_controller.rb:31:in `create'
+Started GET "/login" for 127.0.0.1 at 2019-09-17 07:41:13 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (41.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 494ms (Views: 493.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-09-17 07:41:18 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-09-17 07:41:31 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7euEafaWBimynyYtAsoO8jDQ5pzACKBwbkSDXFxFL22dM9TlKkOYWMxzc3HBy6cD0Fd9izoDPbS2aKni3CvpMw==", "user"=>{"name"=>"Cristian Ines", "email"=>"inesherald@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "inesherald@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `downcase_email' for #<User:0x00007f1f90da4790>):
+  
+app/controllers/users_controller.rb:31:in `create'
